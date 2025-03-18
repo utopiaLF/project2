@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    user-select: none;
+    background-color: #43445C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.head{
+    color: #D27D2D;
+    font-family: "Montserrat", sans-serif;
+    background-color: #272834;
+    width: 100%;
+    margin-top: 0;
+    padding: 10px 0px;
+    text-align: center;
+}
+.empty_text{
+    color: #fafafa;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #bcbcbc;
+}
+.cart{
+    width: 100vw;
+    height: 100vh;
+}
+.cart-item{
+    width: 600px;
+    background-color: #272834;
+    padding: 20px;
+    margin-top: 5px;
+}
+.cart-item h2{
+    color: #fafafa;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+.cart-item h3{
+    color: #FFAA1D;
+    font-family: "Montserrat", sans-serif;
+}
+.cart-item i{
+    color: #80808076;
+}
+.cart-item button{
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 30px;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fafafa;
+    margin-right: 0;
+}
+.cart-item .order{
+    background-color: #D27D2D;
+}
+.cart-item .delete{
+    background-color: #43445C;
+}
+.cart-item .bottom-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 10px;
+}
+
+.back{
+    background-color: #272834;
+    padding: 10px 50px;
+    color: #fafafa;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .head{
+        font-size: 24px;
+    }
+    .empty_text{
+        font-size: 20px;
+    }
+    .cart-item{
+        width: 100%;
+        padding: 5px;
+    }
+    .cart-item h2{
+        font-size: 18px;
+    }
+    .cart-item h3{
+        font-size: 15px;
+    }
+    .cart-item .bottom-side{
+        flex-direction: row-reverse;
+    }
+    .cart-item i{
+        font-size: 13px;
+        display: none;
+    }
+    .cart-item button{
+        font-size: 15px;
+        height: 26px;
+        width: 130px;
+    }
+    .back{
+        padding: 7px 30px;
+        font-size: 15px;
+    }
+}

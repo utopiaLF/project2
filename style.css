@@ -1,0 +1,911 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    user-select: none;
+}
+header {
+    width: 100vw;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+}
+.header-div1 {
+    width: 100%;
+    background-color: #43445C;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-closer {
+    display: none;
+    background: none;
+    border: none;
+    color: #fafafa;
+    font-size: 30px;
+    cursor: pointer;
+}
+.header-div1 nav a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #808080;
+    margin-right: 20px;
+    transition: color 0.2s;
+}
+.header-div1 nav a:hover {
+    color: #53c5f2;
+}
+.header-div2 {
+    width: 100%;
+    height: min-content;
+    background-color: #272834;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hd2-div1 {
+    display: flex;
+    align-items: center;
+}
+.hd2-div1 span img {
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.hd2-div1 h1 {
+    color: #87CEEB;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+.hd2-div1 h3 {
+    color: #a4a1a1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: -10px;
+}
+.hd2-form form input {
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #80808076;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #fafafa;
+    outline: none;
+    transition: all 0.3s;
+}
+.hd2-form form input:hover {
+    border-color: #87CEEB;
+}
+.hd2-form form button {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    background-color: #44b9e7;
+    border: none;
+    color: #fafafa;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-shadow: 0px 0px 5px black;
+}
+.hd2-contact h4 {
+    color: #fafafa;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+.hd2-contact a {
+    color: #fafafa;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    display: block;
+    margin-top: -20px;
+}
+.basket button {
+    width: 90px;
+    height: 90px;
+    font-size: 25px;
+    outline: none;
+    background-color: #D27D2D;
+    border: none;
+    color: #fafafa;
+    border-radius: 5px;
+}
+
+.cart_items_number{
+    position: absolute;
+    color: #fafafa;
+    z-index: 20;
+    background-color: #BF0000;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translate(290%, -80%);
+}
+.cart_items_number p{
+    font-family: "Montserrat", sans-serif;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fafafa;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.nav-menu.active {
+    transform: translateX(0);
+}
+.center-side{
+    width: 100vw;
+    display: flex;
+    background-color: #43445C;
+}
+.side-bar{
+    background-color: #272834;
+    width: 300px;
+    height: max-content;
+    position: sticky;
+    top: 0px;
+}
+.closeSideBarBtn{
+    display: none;
+}
+.side-bar ul{
+    margin: 0;
+    padding: 0px;
+}
+.side-bar ul li{
+    list-style-type: none;
+    padding: 20px 30px;
+    color: #fafafa;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 0.5px solid #80808076;
+    transition: color 0.3s ease-out;
+}
+.side-bar ul li:hover{
+    color: #44b9e7;
+}
+.main-content{
+    padding: 0px 30px;
+}
+.swip1 {
+    margin-top: 30px;
+    width: 1200px;
+    height: 500px;
+    position: relative;
+    left: -10px;
+}
+
+.swip1 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swip1 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper{
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-button-next i,
+.swiper-button-prev i {
+    font-size: 24px;
+    color: #fff;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper .swiper-button-next.custom-next,
+.swiper .swiper-button-prev.custom-prev {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.swiper .swiper-button-next.custom-next:hover,
+.swiper .swiper-button-prev.custom-prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Maxsus ikonka */
+.swiper .swiper-button-next.custom-next::after,
+.swiper .swiper-button-prev.custom-prev::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+}
+.swiper .text-box {
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    background-color: rgba(255, 255, 255, 0.349);
+    padding: 20px;
+    backdrop-filter: blur(1px);
+}
+
+.swiper .text-box h2 {
+    margin: 0;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.swiper .text-box p {
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.swiper .text-box a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00AEEF;
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+.hdd1{
+    color: #fafafa;
+    position: absolute;
+}
+.products{
+    width: 1200px;
+    height: max-content;
+}
+.products .all_category{
+    display: none;
+}
+.products span h1{
+    font-family: "Montserrat", sans-serif;
+    color: #fafafa;
+    font-weight: 400;
+}
+.products .swiper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 40px 20px;
+}
+.products .swiper-slide {
+    width: 370px;
+    height: 400px;
+    background-color: #272834;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+.text-box2{
+    padding: 30px;
+}
+.text-box2 a{
+    color: #fafafa;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.text-box2 a:hover{
+    color: #00AEEF;
+}
+.text-box2 p{
+    font-family: "Montserrat", sans-serif;
+    color: #fafafa;
+    font-size: 14px;
+}
+.recommends{
+    width: 100%;
+    height: auto;
+}
+.recommends h1{
+    font-family: "Montserrat", sans-serif;
+    color: #fafafa;
+    font-weight: 400;
+}
+.recommends .rec-box{
+    display: flex;
+    justify-content: space-evenly;
+}
+.recommends .rec-box div{
+    height: 400px;
+    overflow: hidden;
+}
+.recommends .rec-box img{
+    position: relative;
+    transition: transform 0.8s;
+}
+.recommends .rec-box div:hover img{
+    transform: scale(1.1);
+}
+.recommends .rec-box span{
+    position: relative;
+    top: 0px;
+    left: 20px;
+    transition: top 0.6s;
+}
+.recommends h2{
+    font-family: "Montserrat", sans-serif;
+    color: #272834;
+    font-size: 25px;
+    font-weight: 600;
+}
+.recommends h3{
+    font-family: "Montserrat", sans-serif;
+    color: #272834;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -18px;
+}
+.recommends .rec-box div:hover span{
+    top: -100px;
+}
+.news{
+    width: 1200px;
+    height: max-content;
+}
+.news span h1{
+    font-family: "Montserrat", sans-serif;
+    color: #fafafa;
+    font-weight: 400;
+}
+.news .swiper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 40px 20px;
+}
+.news .swiper-slide {
+    width: 370px;
+    height: 500px;
+    background-color: #272834;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.news .swiper-slide img {
+    display: block;
+    width: 90%;
+    height: 50%;
+    object-fit: cover;
+}
+.card-caption-side span i{
+    color: #D27D2D;
+    margin-top: 20px;
+}
+.card-caption-side p{
+    color: #fafafa;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+}
+.card-caption-side h2{
+    font-family: "Montserrat", sans-serif;
+    color: #fafafa;
+}
+.card-bottom-side{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #808080;
+    height: 50px;
+}
+
+.counter button {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fafafa;
+}
+
+.counter span {
+    font-size: 17px;
+    margin: 0px;
+    width: 40px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #fafafa;
+}
+
+.to_cart{
+    border: none;
+    outline: none;
+    background-color: #D27D2D;
+    width: 160px;
+    height: 50px;
+    font-family: "Montserrat", sans-serif;
+    color: #fafafa;
+    font-size: 17px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+.to_cart:hover{
+    background-color: #985e27;
+}
+.mini-info-box{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #272834;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.mini-info-box div{
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+.mini-info-box span{
+    margin: 0px 10px;
+}
+.mini-info-box div i{
+    color: #fafafa;
+    font-size: 35px;
+}
+.mini-info-box div h2{
+    font-family: "Montserrat", sans-serif;
+    color: #fafafa;
+    font-size: 22px;
+    font-weight: 500;
+}
+.mini-info-box div h3{
+    font-family: "Montserrat", sans-serif;
+    color: #d6d1d1;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: -18px;
+}
+.text-about{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #272834;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.text-about h1{
+    font-family: "Montserrat", sans-serif;
+    color: #fafafa;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.text-about h3{
+    font-family: "Montserrat", sans-serif;
+    color: #a4a1a1;
+    font-weight: 500;
+    font-size: 17px;
+}
+.text-about ul li{
+    font-family: "Montserrat", sans-serif;
+    color: #fafafaea;
+    font-weight: 400;
+}
+footer{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: #272834;
+    margin-bottom: 30px;
+}
+footer div{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 20px;
+    padding: 20px;
+}
+footer h1{
+    font-family: "Montserrat", sans-serif;
+    color: #fafafa;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+footer h2{
+    font-family: "Montserrat", sans-serif;
+    color: #fafafa;
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+footer h3{
+    font-family: "Montserrat", sans-serif;
+    color: #fafafa;
+    font-weight: 300;
+    font-size: 17px;
+}
+footer nav a{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #fafafa;
+    transition: all 0.5s;
+    padding: 5px 5px 5px 0px;
+}
+footer nav a:hover{
+    color: #44b9e7;
+}
+footer div nav{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-toggle, .menu-closer {
+        display: block;
+    }
+
+    .menu-closer{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #43445C;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 60px;
+        transform: translateX(-100%);
+        z-index: 15;
+    }
+
+    .nav-menu a {
+        margin: 15px 0;
+        margin-left: 20px;
+    }
+
+    .header-div1 nav a{
+        color: #fafafa;
+    }
+
+    .header-div2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hd2-div1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hd2-div1 span {
+        text-align: center;
+    }
+
+    .hd2-form form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .hd2-form form input {
+        width: 80%;
+        margin-right: 10px;
+    }
+
+    .hd2-contact {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .basket button {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .cart_items_number {
+        display: none;
+    }
+    .center-side{
+        padding: 0px 0px;
+    }
+    .side-bar{
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 250px;
+        background-color: #43445C;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 60px;
+        transform: translateX(-100%);
+        z-index: 15;
+        transition: transform 0.5s;
+    }
+    .side-bar.active{
+        transform: translateX(0%);
+    }
+    .side-bar ul li{
+        font-size: 14px;
+        padding: 15px 30px;
+    }
+    .closeSideBarBtn{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #272834;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    .closeSideBarBtn i{
+        color: #fafafa;
+        font-size: 30px;
+    }
+    .main-content{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+    .swip1{
+        width: 100%;
+        height: 100%;
+    }
+    .swip1 .swiper-wrapper{
+        padding: 0px 20px;
+        padding-bottom: 30px;
+    }
+    .swip1 .swiper-slide{
+        flex-direction: column;
+    }
+    .swiper .swiper-button-next.custom-next,
+    .swiper .swiper-button-prev.custom-prev{
+        display: none;
+    }
+    .swiper .text-box{
+        position: relative;
+        width: 100%;
+        right: auto;
+        top: 100%;
+        background-color: #272834;
+        text-align: start;
+    }
+    .swiper .text-box h2{
+        font-size: 16px;
+        color: #fafafa;
+    }
+    .swiper .text-box p{
+        font-size: 14px;
+        color: #a4a1a1;
+    }
+    .swiper .text-box a{
+        font-size: 13px;
+    }
+    .products{
+        width: 100%;
+    }
+    .products .all_category{
+        display: block;
+        width: 200px;
+        height: 42px;
+        border: none;
+        background-color: transparent;
+        color: #fafafa;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        margin: auto;
+        margin-top: 20px;
+        background-color: #00AEEF;
+    }
+    .products span h1{
+        font-size: 21px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .products .swiper-slide{
+        width: 100%;
+    }
+    .products .swiper-slide .text-box2{
+        padding: 20px;
+    }
+    .products .swiper-slide .text-box2 a{
+        font-size: 1.2rem;
+    }
+    .products .swiper-slide .text-box2 p{
+        font-size: 0.8rem;
+    }
+    .news{
+        width: 100%;
+    }
+    .news span h1{
+        font-size: 21px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .news .swiper{
+        padding: 5px 5px 30px 5px;
+    }
+    .to_cart{
+        width: 120px;
+        font-size: 13px;
+    }
+    .recommends{
+        padding: 20px;
+    }
+    .recommends h1{
+        font-size: 21px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .recommends .rec-box{
+        flex-direction: column;
+    }
+    .recommends .rec-box div{
+        width: 100%;
+        height: 300px;
+        margin: 10px 0px;
+    }
+    .recommends h2{
+        font-size: 20px;
+    }
+    .recommends h3{
+        font-size: 18px;
+    }
+    .recommends .rec-box img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .recommends .rec-box div span{
+        top: -80px;
+    }
+    .mini-info-box{
+        flex-direction: column;
+    }
+    .mini-info-box div{
+        width: 100%;
+    }
+    .mini-info-box div i{
+        font-size: 25px;
+    }
+    .mini-info-box div h2{
+        font-size: 19px;
+    }
+    .mini-info-box div h3{
+        font-size: 15px;
+    }
+    .text-box2{
+        padding: 0px;
+    }
+    .text-box2 a{
+        font-size: 18px;
+    }
+    .text-box2 p{
+        font-size: 10px;
+    }
+    .text-about h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .text-about h3{
+        font-size: 13px;
+    }
+    footer{
+        width: 100%;
+        height: max-content;
+        flex-direction: column-reverse;
+        padding: 20px;
+        justify-content: left;
+        align-items: end;
+        margin-bottom: 0px;
+    }
+    footer div{
+        width: 100%;
+        padding: 0px 0px 0px 20px;
+        margin: 0px 20px;
+    }
+    footer h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    footer h2{
+        font-size: 15px;
+    }
+    footer h3{
+        font-size: 15px;
+    }
+    footer nav a{
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+}

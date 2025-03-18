@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <title>FurnitureHaven</title>
+</head>
+<body>
+    <header>
+        <div class="header-div1">
+            <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+            <nav class="nav-menu">
+                <button class="menu-closer"><i class="fa-solid fa-xmark"></i></button>
+                <a href="">Главная</a>
+                <a href="">О компании</a>
+                <a href="">Акции</a>
+                <a href="">Оплата</a>
+                <a href="">Доставка</a>
+                <a href="">Контакты</a>
+            </nav>
+        </div>
+
+        <div class="header-div2">
+            <div class="hd2-div1">
+                <span>
+                    <img src="photos/logo.webp" style="width: 70px;height: 70px;" alt="Logo">
+                </span>
+                <span>
+                    <h1>FurnitureHaven</h1>
+                    <h3>Магазин сантехники</h3>
+                </span>
+            </div>
+            <div class="hd2-form">
+                <form action="">
+                    <input type="text" name="" id="" placeholder="поиск">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div class="hd2-contact">
+                <h4>Телефон</h4>
+                <a href=""><i class="fa-brands fa-telegram"></i> +998 00 000-00-00</a>
+            </div>
+            <!-- korzinka link -->
+            <a href="cart.html" class="basket">
+                <button><i class="fa-solid fa-cart-shopping"></i></button>
+
+                <div class="cart_items_number">
+                    <p id="cart_items_number">0</p>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <!-- side bar -->
+
+    <div class="center-side">
+        <div class="side-bar" id="side-bar">
+            <span class="closeSideBarBtn" id="closeSideBarBtn">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <ul>
+                <li>Мебель для ванной <i class="fa-solid fa-angle-right"></i></li>
+                <li>Ванны <i class="fa-solid fa-angle-right"></i></li>
+                <li>Душевые кабины <i class="fa-solid fa-angle-right"></i></li>
+                <li>Унитазы <i class="fa-solid fa-angle-right"></i></li>
+                <li>Смесители <i class="fa-solid fa-angle-right"></i></li>
+                <li>Кухонные мойки <i class="fa-solid fa-angle-right"></i></li>
+                <li>Руковины <i class="fa-solid fa-angle-right"></i></li>
+                <li>Полотенцесушители <i class="fa-solid fa-angle-right"></i></li>
+                <li>Аксессуары <i class="fa-solid fa-angle-right"></i></li>
+                <li>Биде <i class="fa-solid fa-angle-right"></i></li>
+                <li>Душевые поддоны <i class="fa-solid fa-angle-right"></i></li>
+                <li>Комплектующие <i class="fa-solid fa-angle-right"></i></li>
+            </ul>
+        </div>
+        
+        <div class="main-content">
+            <div class="swiper mySwiper swip1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="photos/photo1.jfif" alt="P">
+                        <div class="text-box">
+                            <h2>Раковины в ванную комнату</h2>
+                            <p>большой выбор умывальников любого размера, формы и цвета</p>
+                            <a href="#">Перейти в каталог</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/image3.webp" alt="P">
+                        <div class="text-box">
+                            <h2>Ванна Whaipara</h2>
+                            <p>Коллекция отличается строгой простотой форм и широким размерным рядом</p>
+                            <a href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/image2.jpg" alt="P">
+                        <div class="text-box">
+                            <h2>Гранитные мойки</h2>
+                            <p>значительно удобней в своем использовании по сравнению со стандартным изделием</p>
+                            <a href="#">В каталог</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next custom-next"></div>
+                <div class="swiper-button-prev custom-prev"></div>
+                <div class="swiper-pagination custom-navigation"></div>
+            </div>
+
+            <!-- tovarlar -->
+
+            <div class="products">
+                <span>
+                    <button class="all_category" id="all_category">Все категории</button>
+                </span>
+                <span>
+                    <h1>Популярные категории</h1>
+                </span>
+
+
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="photos/pgoto4.jpg" alt="P">
+                            <div class="text-box2">
+                                <a href="">Мебель для ванной</a>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo blanditiis,
+                                minima eius fugiat voluptate, cumque illo nulla officiis suscipit
+                                incidunt nihil velit cupiditate vitae corrupti est tempora eaque. Eos, error?</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photos/photo5.jpg" alt="P">
+                            <div class="text-box2">
+                                <a href="">Ванны</a>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo blanditiis,
+                                minima eius fugiat voluptate, cumque illo nulla officiis suscipit
+                                incidunt nihil velit cupiditate vitae corrupti est tempora eaque. Eos, error?</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photos/photo6.webp" alt="P">
+                            <div class="text-box2">
+                                <a href="">Душевые кабины</a>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo blanditiis,
+                                minima eius fugiat voluptate, cumque illo nulla officiis suscipit
+                                incidunt nihil velit cupiditate vitae corrupti est tempora eaque. Eos, error?</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photos/image2.jpg" alt="P">
+                            <div class="text-box2">
+                                <a href="">Гранитные мойки</a>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo blanditiis,
+                                minima eius fugiat voluptate, cumque illo nulla officiis suscipit
+                                incidunt nihil velit cupiditate vitae corrupti est tempora eaque. Eos, error?</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photos/photo7.webp" alt="P">
+                            <div class="text-box2">
+                                <a href="">Унитазы</a>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo blanditiis,
+                                minima eius fugiat voluptate, cumque illo nulla officiis suscipit
+                                incidunt nihil velit cupiditate vitae corrupti est tempora eaque. Eos, error?</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photos/photo8.jpg" alt="P">
+                            <div class="text-box2">
+                                <a href="">Смесители</a>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo blanditiis,
+                                minima eius fugiat voluptate, cumque illo nulla officiis suscipit
+                                incidunt nihil velit cupiditate vitae corrupti est tempora eaque. Eos, error?</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photos/photo9.jpg" alt="P">
+                            <div class="text-box2">
+                                <a href="">Кухонные мойки</a>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo blanditiis,
+                                minima eius fugiat voluptate, cumque illo nulla officiis suscipit
+                                incidunt nihil velit cupiditate vitae corrupti est tempora eaque. Eos, error?</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="photos/photo10.jpg" alt="P">
+                            <div class="text-box2">
+                                <a href="">Полотенцесушители</a>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo blanditiis,
+                                minima eius fugiat voluptate, cumque illo nulla officiis suscipit
+                                incidunt nihil velit cupiditate vitae corrupti est tempora eaque. Eos, error?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <!-- yangi tovarlar -->
+
+            <div class="news">
+                <span>
+                    <h1>Новинки</h1>
+                </span>
+
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper cards">
+                        <!-- Mahsulotlar -->
+                        <div class="swiper-slide card" data-product-id="1">
+                            <img src="photos/photo9.jpg" alt="Photo">
+                            <div class="card-caption-side">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>Кухонные мойки</p>
+                                    <h2>Цена: 12 000р</h2>
+                                </span>
+                                <div class="card-bottom-side">
+                                    <div class="counter">
+                                        <button class="minus">-</button>
+                                        <span class="number">0</span>
+                                        <button class="plus">+</button>
+                                    </div>
+                                    <button class="to_cart">В корзину <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide card" data-product-id="2">
+                            <img src="photos/photo6.webp" alt="Photo">
+                            <div class="card-caption-side">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>Душевые кабины</p>
+                                    <h2>Цена: 12 000р</h2>
+                                </span>
+                                <div class="card-bottom-side">
+                                    <div class="counter">
+                                        <button class="minus">-</button>
+                                        <span class="number">0</span>
+                                        <button class="plus">+</button>
+                                    </div>
+                                    <button class="to_cart">В корзину <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card" data-product-id="3">
+                            <img src="photos/photo5.jpg" alt="Photo">
+                            <div class="card-caption-side">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>Ванны</p>
+                                    <h2>Цена: 12 000р</h2>
+                                </span>
+                                <div class="card-bottom-side">
+                                    <div class="counter">
+                                        <button class="minus">-</button>
+                                        <span class="number">0</span>
+                                        <button class="plus">+</button>
+                                    </div>
+                                    <button class="to_cart">В корзину <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card" data-product-id="4">
+                            <img src="photos/photo7.webp" alt="Photo">
+                            <div class="card-caption-side">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>Унитазы</p>
+                                    <h2>Цена: 12 000р</h2>
+                                </span>
+                                <div class="card-bottom-side">
+                                    <div class="counter">
+                                        <button class="minus">-</button>
+                                        <span class="number">0</span>
+                                        <button class="plus">+</button>
+                                    </div>
+                                    <button class="to_cart">В корзину <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card" data-product-id="5">
+                            <img src="photos/pgoto4.jpg" alt="Photo">
+                            <div class="card-caption-side">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>Мебель для ванной</p>
+                                    <h2>Цена: 12 000р</h2>
+                                </span>
+                                <div class="card-bottom-side">
+                                    <div class="counter">
+                                        <button class="minus">-</button>
+                                        <span class="number">0</span>
+                                        <button class="plus">+</button>
+                                    </div>
+                                    <button class="to_cart">В корзину <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card" data-product-id="6">
+                            <img src="photos/photo2.webp" alt="Photo">
+                            <div class="card-caption-side">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>Гранитные мойки</p>
+                                    <h2>Цена: 12 000р</h2>
+                                </span>
+                                <div class="card-bottom-side">
+                                    <div class="counter">
+                                        <button class="minus">-</button>
+                                        <span class="number">0</span>
+                                        <button class="plus">+</button>
+                                    </div>
+                                    <button class="to_cart">В корзину <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Qo'shimcha mahsulotlar... ( boshqa mahsulotlar shu tarzda qo‘shiladi) -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper cards">
+                        <div class="swiper-slide card">
+                            <img src="https://via.placeholder.com/300x300" alt="Photo">
+                            <div class="card-caption-side">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>Тумба под раковину Line</p>
+                                    <h2>Цена: 12 000р</h2>
+                                </span>
+                                <div class="card-bottom-side">
+                                    <div class="counter">
+                                        <button id="minus" class="minus">-</button>
+                                        <span id="number" class="number">0</span>
+                                        <button id="plus" class="plus">+</button>
+                                    </div>
+                                    <button class="to_cart">В корзину <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="https://via.placeholder.com/300x300" alt="Photo">
+                            <div class="card-caption-side">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>Тумба под раковину Line</p>
+                                    <h2>12 105 руб.</h2>
+                                </span>
+                                <div class="card-bottom-side">
+                                    <div class="counter">
+                                        <button id="minus" class="minus">-</button>
+                                        <span id="number" class="number">0</span>
+                                        <button id="plus" class="plus">+</button>
+                                    </div>
+                                    <button class="to_cart">В корзину <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="https://via.placeholder.com/300x300" alt="Photo">
+                            <div class="card-caption-side">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>Тумба под раковину Line</p>
+                                    <h2>12 105 руб.</h2>
+                                </span>
+                                <div class="card-bottom-side">
+                                    <div class="counter">
+                                        <button id="minus" class="minus">-</button>
+                                        <span id="number" class="number">0</span>
+                                        <button id="plus" class="plus">+</button>
+                                    </div>
+                                    <button class="to_cart">В корзину <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="https://via.placeholder.com/300x300" alt="Photo">
+                            <div class="card-caption-side">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>Тумба под раковину Line</p>
+                                    <h2>12 105 руб.</h2>
+                                </span>
+                                <div class="card-bottom-side">
+                                    <div class="counter">
+                                        <button id="minus" class="minus">-</button>
+                                        <span id="number" class="number">0</span>
+                                        <button id="plus" class="plus">+</button>
+                                    </div>
+                                    <button class="to_cart">В корзину <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="https://via.placeholder.com/300x300" alt="Photo">
+                            <div class="card-caption-side">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>Тумба под раковину Line</p>
+                                    <h2>12 105 руб.</h2>
+                                </span>
+                                <div class="card-bottom-side">
+                                    <div class="counter">
+                                        <button id="minus" class="minus">-</button>
+                                        <span id="number" class="number">0</span>
+                                        <button id="plus" class="plus">+</button>
+                                    </div>
+                                    <button class="to_cart">В корзину <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="https://via.placeholder.com/300x300" alt="Photo">
+                            <div class="card-caption-side">
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>Тумба под раковину Line</p>
+                                    <h2>12 105 руб.</h2>
+                                </span>
+                                <div class="card-bottom-side">
+                                    <div class="counter">
+                                        <button id="minus" class="minus">-</button>
+                                        <span id="number" class="number">0</span>
+                                        <button id="plus" class="plus">+</button>
+                                    </div>
+                                    <button class="to_cart">В корзину <i class="fa-solid fa-cart-shopping"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div> -->
+            </div>
+
+            <!-- tovarlar -->
+
+            <!-- <div class="recommends">
+                <h1>Выгодные предложения</h1>
+
+                <div class="rec-box">
+                    <div>
+                        <img src="photos/photo7.webp" alt="P">
+
+                        <span>
+                            <h2>Photo text</h2>
+                            <h3>This is a caption for photo</h3>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="https://via.placeholder.com/350x400" alt="P">
+
+                        <span>
+                            <h2>Photo text</h2>
+                            <h3>This is a caption for photo</h3>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="https://via.placeholder.com/350x400" alt="P">
+
+                        <span>
+                            <h2>Photo text</h2>
+                            <h3>This is a caption for photo</h3>
+                        </span>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="mini-info-box">
+                <div>
+                    <span>
+                        <i class="fa-solid fa-shop"></i>
+                    </span>
+                    <span>
+                        <h2>Ассортимент</h2>
+                        <h3>Более 10 000 товаров и 100 брендов</h3>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <i class="fa-solid fa-user-tie"></i>
+                    </span>
+                    <span>
+                        <h2>Клиентский сервис</h2>
+                        <h3>Оперативно отвечаем на вопросы покупателей</h3>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <i class="fa-solid fa-medal"></i>
+                    </span>
+                    <span>
+                        <h2>Качественные материалы</h2>
+                        <h3>Соответствует требованиям и мировым стандартам</h3>
+                    </span>
+                </div>
+            </div>
+
+            <!-- info -->
+
+            <div class="text-about">
+                <h1>Интернет магазин сантехники</h1>
+
+                <h3>В наших каталогах Вы найдете внушительный ассортимент, среди которого можно выделить следующие категории товаров:</h3>
+                <ul>
+                    <li>Душевые кабины и все комплектующие для душа,</li>
+                    <li>Ванны, в том числе гидромассажные, чугунные и акриловые,</li>
+                    <li>Санфаянс - в первую очередь раковины, унитазы и бачки,</li>
+                    <li>Аксессуары и комплектующие для ванной комнаты и для кухни,</li>
+                    <li>Водонагреватели и отопительная техника.</li>
+                </ul>
+
+                <h3>Кроме того, в наличии имеется огромное количество полотенцесушителей, мебели для ванной и прочих элементов декора для ванных комнат - с полным перечнем предлагаемой продукции Вы можете ознакомиться в каталоге.</h3>
+
+                <h3>Помимо широкого ассортимента мы порадуем Вас доступными ценами. Наша компания не первый год работает на рынке сантехники и за это время наладила поставки от фирм-производителей, в связи с чем мы устанавливаем максимально низкие цены на всю продукцию.</h3>
+
+                <h3>Но и это еще не все - в нашем магазине действуют скидки и акционные спецпредложения, а также приятные условия доставки. С нами удобно и с нами выгодно!</h3>
+            </div>
+
+            <!-- footer -->
+
+            <footer>
+                <div>
+                    <h1>О магазине</h1>
+        
+                    <nav>
+                        <a href="">Частые вопросы</a>
+                        <a href="">Возврат и обмен</a>
+                        <a href="">Карта сайта</a>
+                        <a href="">Поиск по сайту</a>
+                    </nav>
+                </div>
+                <div>
+                    <h1>Информация</h1>
+        
+                    <nav>
+                        <a href="">Оплата</a>
+                        <a href="">Доставка</a>
+                        <a href="">Возврат и обмен</a>
+                        <a href="">Мои заказы</a>
+                        <a href="">Бренды</a>
+                    </nav>
+                </div>
+                <div>
+                    <h1>Контакты</h1>
+                        <span>
+                            <h3>undefined</h3>
+                            <h2>+998 00 000 00 00 <i class="fa-brands fa-telegram"></i></h2>
+                            <h3>mail@example.com</h3>
+                            <h2>Без выходных с 09:00-22:00</h2>
+                        </span>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- swiper js link -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          on: {
+            init: function() {
+                document.querySelector('.swiper-button-next').innerHTML = '<i class="fas fa-arrow-right"></i>';
+                document.querySelector('.swiper-button-prev').innerHTML = '<i class="fas fa-arrow-left"></i>';
+            }
+        }
+    });
+
+        var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            600: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+        },
+    });
+
+        var swiper3 = new Swiper(".mySwiper3", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            600: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+        },
+    });
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
